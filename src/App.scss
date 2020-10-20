@@ -1,0 +1,114 @@
+
+$s-size:1.2rem;
+$m-size:1.6rem;
+$l-size:3.2rem;
+$xl-size:4.8rem;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $m-size;
+    background-color: #FF715B;
+    font-family: 'Questrial', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor: default;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+#editor::-webkit-scrollbar {
+  width: 20px;               /* width of the entire scrollbar */
+}
+#editor::-webkit-scrollbar-track {
+  background: #FFC0BE;        /* color of the tracking area */
+  border-top-right-radius:2rem ;
+  border-bottom-right-radius:2rem ;
+}
+#editor::-webkit-scrollbar-thumb {
+  background-color: #FF715B;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 5px solid #FFC0BE;  /* creates padding around scroll thumb */
+}
+
+
+#app{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    max-width: 800px;
+}
+
+#editor{
+    min-height: 300px;
+    background-color: #FFC0BE;
+    padding: $m-size;
+    resize:none;
+    border: none;
+    outline:none;
+    overflow:auto;
+    border-radius: 2rem;
+    // border-bottom-left-radius: 2rem;
+    // border-top-left-radius: 2rem;
+}
+
+
+#preview-head,#heading,#editor-head{
+    font-size: $l-size;
+    text-align: center;
+    padding: $m-size;
+}
+
+#preview-head,#editor-head{
+    background-color: #F86478;
+    border: 2px solid black;
+    margin-top: $l-size;
+    margin-bottom: $m-size;
+    border-radius: 2rem;
+}
+#editor-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+#preview{
+   
+    min-height: 300px;
+    border-radius: 2rem;
+    background-color: #FFC0BE;
+    padding: $m-size;
+    word-wrap: break-word;
+    margin-bottom: $l-size;
+    font-family: 'Quicksand', sans-serif;   
+}
+
+#button{
+    font-size: $s-size;
+    text-transform: capitalize;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    background-color: #F86478;
+}
+
+#button:hover{
+    background-color: black;
+    border-radius: 1rem;
+    color: white;
+}
